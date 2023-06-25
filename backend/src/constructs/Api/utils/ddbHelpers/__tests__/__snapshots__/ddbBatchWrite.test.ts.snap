@@ -1,0 +1,41 @@
+// Vitest Snapshot v1
+
+exports[`ddbBatchWrite > resolves with a correct value 1`] = `
+[
+  {
+    "dummyItemKey": "dummyItemValue",
+  },
+]
+`;
+
+exports[`ddbBatchWrite > sends "BatchWriteCommand" from "DynamoDBDocumentClient" with correct args 1`] = `
+{
+  "RequestItems": {
+    "dummyTableName": [
+      {
+        "PutRequest": {
+          "Item": {
+            "dummyItemKey": "dummyItemValue",
+          },
+        },
+      },
+    ],
+  },
+}
+`;
+
+exports[`ddbBatchWrite > when "BatchWriteCommand" response has "UnprocessedItems" > sends "BatchWriteCommand" a second time with correct args 1`] = `
+{
+  "RequestItems": {
+    "dummyTableName": [
+      {
+        "PutRequest": {
+          "Item": {
+            "dummyUnprocessedItemKey": "dummyUnprocessedItemValue",
+          },
+        },
+      },
+    ],
+  },
+}
+`;

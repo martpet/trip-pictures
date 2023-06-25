@@ -1,0 +1,47 @@
+// Vitest Snapshot v1
+
+exports[`createSession > calls "serialize" with correct args 1`] = `
+[
+  [
+    "sessionId",
+    "dummyUUID",
+    {
+      "expires": 2023-01-01T00:00:00.000Z,
+      "httpOnly": true,
+      "sameSite": true,
+      "secure": true,
+    },
+  ],
+]
+`;
+
+exports[`createSession > resolves with a correct value 1`] = `"dummyCookie"`;
+
+exports[`createSession > sends "PutCommand" from "DynamoDBDocumentClient" with correct args 1`] = `
+{
+  "Item": {
+    "created": 1640995200000,
+    "id": "dummyUUID",
+    "idToken": "dummyIdToken",
+    "refreshToken": "dummyRefreshToken",
+    "refreshTokenExpires": 1672531200,
+    "userId": "dummySub ",
+  },
+  "TableName": "TP-sessions",
+}
+`;
+
+exports[`createSession > when "globalLambdaProps.envName" is "personal" > calls "serialize" with correct args 1`] = `
+[
+  [
+    "sessionId",
+    "dummyUUID",
+    {
+      "expires": 2023-01-01T00:00:00.000Z,
+      "httpOnly": true,
+      "sameSite": "none",
+      "secure": true,
+    },
+  ],
+]
+`;

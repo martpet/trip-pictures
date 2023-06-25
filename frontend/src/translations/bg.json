@@ -1,0 +1,238 @@
+{
+  "/FTDR0": {
+    "defaultMessage": "Наитсни <em>Качи сега</em> отново",
+    "description": "upload notification failure - try again"
+  },
+  "0B4+//": {
+    "defaultMessage": "Избери цветова схема",
+    "description": "color scheme picker label"
+  },
+  "0Mqwsb": {
+    "defaultMessage": "Намери моята локация",
+    "description": "map geolocation control"
+  },
+  "17kFBm": {
+    "defaultMessage": "дата",
+    "description": "file meta: date"
+  },
+  "2TuW1z": {
+    "defaultMessage": "Избери файлове от компютъра или ги довалчи тук",
+    "description": "upload empty state illustration body"
+  },
+  "2V2oVE": {
+    "defaultMessage": "Успешно качено",
+    "description": "upload thumbnail alert success"
+  },
+  "2XzbH9": {
+    "defaultMessage": "Снимки, направени с <em>\"Високо ефективен\"</em> (<em>Настройки → Камера → Формати</em>), не могат да бъдат качени от iPhone. Може да ги качите от компютър.",
+    "description": "thumbnail error iphone high efficiency help content"
+  },
+  "1qJpd3": {
+    "defaultMessage": "Качване на снимки",
+    "description": "upload dialog heading"
+  },
+  "4yg8Sf": {
+    "defaultMessage": "Избери език",
+    "description": "language picker label"
+  },
+  "5STaZv": {
+    "defaultMessage": "Цвят",
+    "description": "settings tab"
+  },
+  "5l+6Ai": {
+    "defaultMessage": "Файлът е {this_size}, но максималният разрешен размер е {max_size}",
+    "description": "upload thumbnail file size error"
+  },
+  "5rPSQt": {
+    "defaultMessage": "Интернет връзката е прекъсната",
+    "description": "transfer files thunk toast - network online"
+  },
+  "7hkxXs": {
+    "defaultMessage": "Профил",
+    "description": "profile dialog aria-label"
+  },
+  "8NNu/T": {
+    "defaultMessage": "{count,plural,one{{count} качен файл} other{{count} качени файла}}",
+    "description": "upload notification success"
+  },
+  "8VZZzI": {
+    "defaultMessage": "Намали",
+    "description": "zoom control - out"
+  },
+  "A6sLC1": {
+    "defaultMessage": "тъмна",
+    "description": "color scheme picker item - dark"
+  },
+  "AkAQGg": {
+    "defaultMessage": "Избери още файлове",
+    "description": "button choose files (with added files)"
+  },
+  "B+/jyf": {
+    "defaultMessage": "Добре, готов съм",
+    "description": "upload dialog done button"
+  },
+  "BAOl3n": {
+    "defaultMessage": "светла",
+    "description": "color scheme picker item - light"
+  },
+  "BNALnm": {
+    "defaultMessage": "Премахни",
+    "description": "upload thumbnail remove button aria label"
+  },
+  "DWTA3g": {
+    "defaultMessage": "Затвори",
+    "description": "upload dialog close button"
+  },
+  "FOqNnc": {
+    "defaultMessage": "автоматична",
+    "description": "color scheme picker item - auto"
+  },
+  "FvWJ8C": {
+    "defaultMessage": "Вход с Google",
+    "description": "google login button"
+  },
+  "GT7oVC": {
+    "defaultMessage": "За iPhone потребители",
+    "description": "thumbnail error iphone high efficiency help heading"
+  },
+  "HrfHC5": {
+    "defaultMessage": "{count,plural,one{{count} файл не успя да се качи.} other{{count} файла не успяха да се качат.}}",
+    "description": "upload notification failure"
+  },
+  "ITu5Da": {
+    "defaultMessage": "Език",
+    "description": "settings tab"
+  },
+  "IVmNRZ": {
+    "defaultMessage": "Интернет връзката е възстановена",
+    "description": "transfer files thunk toast - network offline"
+  },
+  "Kb5Rty": {
+    "defaultMessage": "Файлът вече е бил избран",
+    "description": "upload thumbnail error already selected"
+  },
+  "LKo07P": {
+    "defaultMessage": "Вход",
+    "description": "login dialog heading"
+  },
+  "LoNuQf": {
+    "defaultMessage": "Прозрачна лента с инструменти",
+    "description": "toolbar opacity setting"
+  },
+  "OdWdjE": {
+    "defaultMessage": "Премахни наклона",
+    "description": "map pitch control"
+  },
+  "PH0Ug8": {
+    "defaultMessage": "Не може да се качи:",
+    "description": "upload thumbnail error intro"
+  },
+  "PLJPTc": {
+    "defaultMessage": "Качи сега",
+    "description": "upload dialog upload button"
+  },
+  "QEjmY2": {
+    "defaultMessage": "Качва се…",
+    "description": "upload dialog upload button - uploading"
+  },
+  "SoG7Bh": {
+    "defaultMessage": "{count,plural,one{{count} файл не е подходящ за качване} other{{count} файла не са подходящи за качване}}",
+    "description": "upload notification invalid files"
+  },
+  "VeLxrQ": {
+    "defaultMessage": "GPS локация",
+    "description": "file meta: location"
+  },
+  "Y1v68Y": {
+    "defaultMessage": "Качването е неуспешно",
+    "description": "upload thumbnail error transfer failed"
+  },
+  "aL2S6s": {
+    "defaultMessage": "Скрий",
+    "description": "upload dialog hide button"
+  },
+  "aeqzkz": {
+    "defaultMessage": "Възстанови север",
+    "description": "map compass control"
+  },
+  "aq56G8": {
+    "defaultMessage": "Излез от профила",
+    "description": "logout button"
+  },
+  "c4tr7P": {
+    "defaultMessage": "Размер на снимките",
+    "description": "gallery size slider aria-label"
+  },
+  "iTcH6p": {
+    "defaultMessage": "Добави колона",
+    "description": "gallery size slider minus button"
+  },
+  "jOxmkh": {
+    "defaultMessage": "Вход с Apple",
+    "description": "apple login button"
+  },
+  "mOqhio": {
+    "defaultMessage": "Качи снимки",
+    "description": "toolbar upload button aria label"
+  },
+  "mYCBbs": {
+    "defaultMessage": "'Ховър' ефект на снимките върху картата",
+    "description": "points preview hover setting"
+  },
+  "n5BdYp": {
+    "defaultMessage": "Избери файлове",
+    "description": "button choose files (initial state)"
+  },
+  "nJFXM+": {
+    "defaultMessage": "Показване на снимки върху картата",
+    "description": "points preview setting"
+  },
+  "oB9CE2": {
+    "defaultMessage": "Профил",
+    "description": "toolbar profile button aria label"
+  },
+  "ogov33": {
+    "defaultMessage": "Всички {count} файла са качени",
+    "description": "upload notification success all"
+  },
+  "p0rurO": {
+    "defaultMessage": "Бета версия",
+    "description": "settings tab"
+  },
+  "rZ0PLH": {
+    "defaultMessage": "Увеличи",
+    "description": "zoom control - in"
+  },
+  "s+G7t6": {
+    "defaultMessage": "Тази снимка е качвана и преди",
+    "description": "upload thumbnail error already uploaded"
+  },
+  "vk/Gju": {
+    "defaultMessage": "Довлачи файлове тук",
+    "description": "upload empty state illustration heading"
+  },
+  "x8bEvj": {
+    "defaultMessage": "Настройки",
+    "description": "toolbar settings button aria label"
+  },
+  "xcpX65": {
+    "defaultMessage": "{items_count, plural, one {Липсва} other {Липсват}} {items}",
+    "description": "file missing meta data error"
+  },
+  "zI2HJf": {
+    "defaultMessage": "Премахни колона",
+    "description": "gallery size slider minus button"
+  },
+  "zJ5RUL": {
+    "defaultMessage": "Настройки",
+    "description": "settings dialog heading"
+  },
+  "zN1QTg": {
+    "defaultMessage": "Карта",
+    "description": "map button"
+  },
+  "K/mag1": {
+    "defaultMessage": "Добави снимки",
+    "description": "uplaod button"
+  }
+}

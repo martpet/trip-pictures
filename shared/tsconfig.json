@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "module": "ESNext",
+    "isolatedModules": true,
+    "paths": {},
+  },
+  "extends": "../tsconfig.json",
+  "include": [
+    "consts",
+    "utils",
+    "types",
+    "vitest.config.ts",
+    ".eslintrc.cjs"
+  ]
+}

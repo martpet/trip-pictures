@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "module": "ESNext",
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ]
+  },
+  "extends": "../tsconfig.json",
+  "include": [
+    "src",
+    "vite.config.ts",
+    "vitest.config.ts",
+    ".eslintrc.cjs"
+, "../shared/consts/languages.ts", "../shared/types/ToolbarPosition.ts", "../shared/types/FileMeta.ts", "../shared/utils/createPhotoFingerprint.ts", "../shared/types/PhotoFingerprint.ts", "../shared/types/SettingsDialogTab.ts"  ],
+}

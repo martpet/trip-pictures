@@ -1,0 +1,37 @@
+// Vitest Snapshot v1
+
+exports[`streamHandler > calls "createPhotoS3Key" with correct args 1`] = `
+[
+  [
+    {
+      "fingerprint": "dummyFingerPrint1",
+      "userId": "dummyUserId1",
+    },
+  ],
+  [
+    {
+      "fingerprint": "dummyFingerPrint2",
+      "userId": "dummyUserId2",
+    },
+  ],
+]
+`;
+
+exports[`streamHandler > resolves with a correct value 1`] = `undefined`;
+
+exports[`streamHandler > sends "PutObjectTaggingCommand" from "S3Client" with correct args 1`] = `
+{
+  "Bucket": "dummyPhotoBucketName",
+  "Key": "dummyPhotoS3Key",
+  "Tagging": {
+    "TagSet": [
+      {
+        "Key": "isTableItemCreated",
+        "Value": "true",
+      },
+    ],
+  },
+}
+`;
+
+exports[`streamHandler > when PutObjectTaggingCommand returns a rejected promise > rejects with a correct value 1`] = `[Error: dummy PutObjectTaggingCommand error]`;

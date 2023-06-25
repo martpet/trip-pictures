@@ -1,0 +1,238 @@
+{
+  "/FTDR0": {
+    "defaultMessage": "Press <em>Start upload</em> again",
+    "description": "upload notification failure - try again"
+  },
+  "0B4+//": {
+    "defaultMessage": "Choose color scheme",
+    "description": "color scheme picker label"
+  },
+  "0Mqwsb": {
+    "defaultMessage": "Find my location",
+    "description": "map geolocation control"
+  },
+  "17kFBm": {
+    "defaultMessage": "date",
+    "description": "file meta: date"
+  },
+  "1qJpd3": {
+    "defaultMessage": "Add photos",
+    "description": "upload dialog heading"
+  },
+  "2TuW1z": {
+    "defaultMessage": "Select files from your computer or drop them here",
+    "description": "upload empty state illustration body"
+  },
+  "2V2oVE": {
+    "defaultMessage": "Succesfully uploaded",
+    "description": "upload thumbnail alert success"
+  },
+  "2XzbH9": {
+    "defaultMessage": "Photos taken with <em>\"High Efficiency\"</em> (<em>Settings → Camera → Formats</em>) cannot be uploaded from an iPhone. You can upload this photo from a Mac.",
+    "description": "thumbnail error iphone high efficiency help content"
+  },
+  "4yg8Sf": {
+    "defaultMessage": "Choose language",
+    "description": "language picker label"
+  },
+  "5STaZv": {
+    "defaultMessage": "Colors",
+    "description": "settings tab"
+  },
+  "5l+6Ai": {
+    "defaultMessage": "File size is {this_size} but maximum allowed is {max_size}",
+    "description": "upload thumbnail file size error"
+  },
+  "5rPSQt": {
+    "defaultMessage": "Network is online",
+    "description": "transfer files thunk toast - network online"
+  },
+  "7hkxXs": {
+    "defaultMessage": "Profile",
+    "description": "profile dialog aria-label"
+  },
+  "8NNu/T": {
+    "defaultMessage": "{count,plural,one{{count} file is uploaded} other{{count} files are uploaded}}",
+    "description": "upload notification success"
+  },
+  "8VZZzI": {
+    "defaultMessage": "Zoom out",
+    "description": "zoom control - out"
+  },
+  "A6sLC1": {
+    "defaultMessage": "Dark",
+    "description": "color scheme picker item - dark"
+  },
+  "AkAQGg": {
+    "defaultMessage": "Add more files",
+    "description": "button choose files (with added files)"
+  },
+  "B+/jyf": {
+    "defaultMessage": "I'm done",
+    "description": "upload dialog done button"
+  },
+  "BAOl3n": {
+    "defaultMessage": "Light",
+    "description": "color scheme picker item - light"
+  },
+  "BNALnm": {
+    "defaultMessage": "Remove",
+    "description": "upload thumbnail remove button aria label"
+  },
+  "DWTA3g": {
+    "defaultMessage": "Close",
+    "description": "upload dialog close button"
+  },
+  "FOqNnc": {
+    "defaultMessage": "Auto",
+    "description": "color scheme picker item - auto"
+  },
+  "FvWJ8C": {
+    "defaultMessage": "Continue with Google",
+    "description": "google login button"
+  },
+  "GT7oVC": {
+    "defaultMessage": "iPhone users",
+    "description": "thumbnail error iphone high efficiency help heading"
+  },
+  "HrfHC5": {
+    "defaultMessage": "{count,plural,one{{count} file failed to upload.} other{{count} files failed to upload.}}",
+    "description": "upload notification failure"
+  },
+  "ITu5Da": {
+    "defaultMessage": "Language",
+    "description": "settings tab"
+  },
+  "IVmNRZ": {
+    "defaultMessage": "Network is offline",
+    "description": "transfer files thunk toast - network offline"
+  },
+  "K/mag1": {
+    "defaultMessage": "Add photos",
+    "description": "uplaod button"
+  },
+  "Kb5Rty": {
+    "defaultMessage": "This photo has already been selected",
+    "description": "upload thumbnail error already selected"
+  },
+  "LKo07P": {
+    "defaultMessage": "Log In",
+    "description": "login dialog heading"
+  },
+  "LoNuQf": {
+    "defaultMessage": "Translucent toolbar",
+    "description": "toolbar opacity setting"
+  },
+  "OdWdjE": {
+    "defaultMessage": "Reset pitch",
+    "description": "map pitch control"
+  },
+  "PH0Ug8": {
+    "defaultMessage": "Cannot upload:",
+    "description": "upload thumbnail error intro"
+  },
+  "PLJPTc": {
+    "defaultMessage": "Start upload",
+    "description": "upload dialog upload button"
+  },
+  "QEjmY2": {
+    "defaultMessage": "Uploading…",
+    "description": "upload dialog upload button - uploading"
+  },
+  "SoG7Bh": {
+    "defaultMessage": "{count,plural,one{{count} file does not meet upload criteria} other{{count} files don't meet upload criteria}}",
+    "description": "upload notification invalid files"
+  },
+  "VeLxrQ": {
+    "defaultMessage": "GPS location",
+    "description": "file meta: location"
+  },
+  "Y1v68Y": {
+    "defaultMessage": "Failed to upload",
+    "description": "upload thumbnail error transfer failed"
+  },
+  "aL2S6s": {
+    "defaultMessage": "Hide",
+    "description": "upload dialog hide button"
+  },
+  "aeqzkz": {
+    "defaultMessage": "Reset north",
+    "description": "map compass control"
+  },
+  "aq56G8": {
+    "defaultMessage": "Sign Out",
+    "description": "logout button"
+  },
+  "c4tr7P": {
+    "defaultMessage": "Thumbnail size",
+    "description": "gallery size slider aria-label"
+  },
+  "iTcH6p": {
+    "defaultMessage": "Zoom in",
+    "description": "gallery size slider minus button"
+  },
+  "jOxmkh": {
+    "defaultMessage": "Continue with Apple",
+    "description": "apple login button"
+  },
+  "mOqhio": {
+    "defaultMessage": "Upload photos",
+    "description": "toolbar upload button aria label"
+  },
+  "mYCBbs": {
+    "defaultMessage": "Photo previews hover effect",
+    "description": "points preview hover setting"
+  },
+  "n5BdYp": {
+    "defaultMessage": "Select files",
+    "description": "button choose files (initial state)"
+  },
+  "nJFXM+": {
+    "defaultMessage": "Photo previews",
+    "description": "points preview setting"
+  },
+  "oB9CE2": {
+    "defaultMessage": "Profile",
+    "description": "toolbar profile button aria label"
+  },
+  "ogov33": {
+    "defaultMessage": "All {count} files are uploaded",
+    "description": "upload notification success all"
+  },
+  "p0rurO": {
+    "defaultMessage": "Experimental",
+    "description": "settings tab"
+  },
+  "rZ0PLH": {
+    "defaultMessage": "Zoom in",
+    "description": "zoom control - in"
+  },
+  "s+G7t6": {
+    "defaultMessage": "This photo has been previously uploaded",
+    "description": "upload thumbnail error already uploaded"
+  },
+  "vk/Gju": {
+    "defaultMessage": "Drop your files",
+    "description": "upload empty state illustration heading"
+  },
+  "x8bEvj": {
+    "defaultMessage": "Settings",
+    "description": "toolbar settings button aria label"
+  },
+  "xcpX65": {
+    "defaultMessage": "Missing {items}",
+    "description": "file missing meta data error"
+  },
+  "zI2HJf": {
+    "defaultMessage": "Zoom out",
+    "description": "gallery size slider minus button"
+  },
+  "zJ5RUL": {
+    "defaultMessage": "Settings",
+    "description": "settings dialog heading"
+  },
+  "zN1QTg": {
+    "defaultMessage": "Map",
+    "description": "map button"
+  }
+}

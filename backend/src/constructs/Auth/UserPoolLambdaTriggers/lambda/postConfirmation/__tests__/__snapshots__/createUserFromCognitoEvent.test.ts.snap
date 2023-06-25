@@ -1,0 +1,20 @@
+// Vitest Snapshot v1
+
+exports[`createUserFromCognitoEvent > resolves with a correct value 1`] = `
+{
+  "Attributes": {
+    "dummyPutCommandAttrKey": "dummyPutCommandAttrValue",
+  },
+}
+`;
+
+exports[`createUserFromCognitoEvent > sends "PutCommand" from "DynamoDBDocumentClient" with correct args 1`] = `
+{
+  "Item": {
+    "dummyUserPropFromCognitoEventKey": "dummyUserPropFromCognitoEventValue",
+    "id": "dummyId",
+    "settings": {},
+  },
+  "TableName": "TP-users",
+}
+`;

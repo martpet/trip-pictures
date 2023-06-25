@@ -1,0 +1,1 @@
+export const AWS_MAPS_HOSTNAME_REGEXP = /maps.geo.*.amazonaws.com/;

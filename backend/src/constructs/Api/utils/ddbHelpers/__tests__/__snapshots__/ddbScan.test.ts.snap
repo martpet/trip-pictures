@@ -1,0 +1,40 @@
+// Vitest Snapshot v1
+
+exports[`ddbScan > resolves with a correct value 1`] = `
+[
+  {
+    "dummyItemKey": "dummyItemValue",
+  },
+]
+`;
+
+exports[`ddbScan > sends "ScanCommand" from "DynamoDBDocumentClient" with correct args 1`] = `
+{
+  "ExclusiveStartKey": undefined,
+  "ProjectionExpression": "dummyAttr",
+  "TableName": "dummyTablename",
+}
+`;
+
+exports[`ddbScan > when "Items" is missing from "ScanCommand" output > resolves with a correct value 1`] = `[]`;
+
+exports[`ddbScan > when "LastEvaluatedKey" exists in "ScanCommand" output > resolves with a correct value 1`] = `
+[
+  {
+    "dummyItemKey1": "dummyItemValue1",
+  },
+  {
+    "dummyItemKey2": "dummyItemValue2",
+  },
+]
+`;
+
+exports[`ddbScan > when "LastEvaluatedKey" exists in "ScanCommand" output > sends "ScanCommand" a second time with correct args 1`] = `
+{
+  "ExclusiveStartKey": {
+    "lastKeyProp": "lastKeyValue",
+  },
+  "ProjectionExpression": "dummyAttr",
+  "TableName": "dummyTablename",
+}
+`;

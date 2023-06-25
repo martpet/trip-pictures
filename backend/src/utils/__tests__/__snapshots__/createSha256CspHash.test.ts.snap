@@ -1,0 +1,25 @@
+// Vitest Snapshot v1
+
+exports[`createSha256CspHash > calls "createHash" with correct args 1`] = `
+[
+  [
+    "sha256",
+  ],
+]
+`;
+
+exports[`createSha256CspHash > calls "digest" with correct args 1`] = `
+[
+  [
+    "base64",
+  ],
+]
+`;
+
+exports[`createSha256CspHash > calls "update" with correct args 1`] = `
+[
+  [
+    "dummyContent",
+  ],
+]
+`;

@@ -1,0 +1,50 @@
+// Vitest Snapshot v1
+
+exports[`ddbBatchGet > resolves with a correct value 1`] = `
+[
+  {
+    "dummyResponseKey": "dummyResponseValue",
+  },
+]
+`;
+
+exports[`ddbBatchGet > sends "BatchGetCommand" from "DynamoDBDocumentClient" with correct args 1`] = `
+{
+  "RequestItems": {
+    "dummyTableName": {
+      "Keys": [
+        {
+          "dummyPartitionKeyName": "dummyPkValue",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`ddbBatchGet > when "BatchGetCommand" response has "UnprocessedKeys" > resolves with a correct value 1`] = `
+[
+  {
+    "dummyResponseKey": "dummyResponseValue1",
+  },
+  {
+    "dummyResponseKey": "dummyResponseValue2",
+  },
+]
+`;
+
+exports[`ddbBatchGet > when "BatchGetCommand" response has "UnprocessedKeys" > sends "BatchGetCommand" a second time with correct args 1`] = `
+{
+  "RequestItems": {
+    "dummyTableName": {
+      "Keys": [
+        {
+          "dummyUnprocessedKeyProp": "dummyUnprocessedKeyValue",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`ddbBatchGet > when "BatchGetCommand" response is missing "Responses" > resolves with a correct value 1`] = `[]`;

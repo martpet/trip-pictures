@@ -1,0 +1,12 @@
+/* @import url("fonts/fonts.css"); */
+
+body {
+  margin: 0;
+}
+
+button[class^='spectrum-Button']:not(:disabled),
+button[class^='spectrum-ActionButton']:not([aria-checked='true']),
+[class^='spectrum-Tabs-item']:not([aria-selected='true']),
+[class^='spectrum-Menu-item'] {
+  cursor: pointer !important;
+}

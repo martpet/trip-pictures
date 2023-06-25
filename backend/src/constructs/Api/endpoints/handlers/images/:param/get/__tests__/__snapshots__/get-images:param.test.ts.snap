@@ -1,0 +1,137 @@
+// Vitest Snapshot v1
+
+exports[`get-images:param > calls "processImage" with correct args 1`] = `
+[
+  [
+    {
+      "height": 555,
+      "quality": 99,
+      "stream": "dummyBody",
+      "width": 888,
+    },
+  ],
+]
+`;
+
+exports[`get-images:param > resolves with a correct value 1`] = `
+{
+  "body": "dummyBase64EncodedImage",
+  "headers": {
+    "Cache-Control": "max-age=3153600000",
+    "Content-Type": "image/jpeg",
+  },
+  "isBase64Encoded": true,
+  "statusCode": 200,
+}
+`;
+
+exports[`get-images:param > sends "GetCommand" from "DynamoDBDocumentClient" with correct args 1`] = `
+{
+  "Key": {
+    "fingerprint": "dummyFingerprint",
+  },
+  "TableName": "TP-photos",
+}
+`;
+
+exports[`get-images:param > sends "GetObjectCommand" from "S3Client" with correct args 1`] = `
+{
+  "Bucket": "dummyPhotoBucketName",
+  "Key": "dummyUserId/dummyFingerprint",
+}
+`;
+
+exports[`get-images:param > when "Body" is missing from "GetObjectCommand" output > calls "errorResponse" with correct args 1`] = `
+[
+  [
+    "dc1c2c42bf",
+  ],
+]
+`;
+
+exports[`get-images:param > when "Body" is missing from "GetObjectCommand" output > resolves with a correct value 1`] = `"dummyErrorResponse"`;
+
+exports[`get-images:param > when "Item" is missing from "GetCommand" output > calls "errorResponse" with correct args 1`] = `
+[
+  [
+    "5b2797f93a",
+    {
+      "statusCode": 404,
+    },
+  ],
+]
+`;
+
+exports[`get-images:param > when "Item" is missing from "GetCommand" output > resolves with a correct value 1`] = `"dummyErrorResponse"`;
+
+exports[`get-images:param > when "fingerprint" path parameter is missing > calls "errorResponse" with correct args 1`] = `
+[
+  [
+    "564208f603",
+    {
+      "statusCode": 400,
+    },
+  ],
+]
+`;
+
+exports[`get-images:param > when "fingerprint" path parameter is missing > resolves with a correct value 1`] = `"dummyErrorResponse"`;
+
+exports[`get-images:param > when "height" query string parameter is missing > calls "processImage" with correct args 1`] = `
+[
+  [
+    {
+      "height": undefined,
+      "quality": 99,
+      "stream": "dummyBody",
+      "width": 888,
+    },
+  ],
+]
+`;
+
+exports[`get-images:param > when "photoBucket" env var is missing > calls "errorResponse" with correct args 1`] = `
+[
+  [
+    "68e8d0232f",
+  ],
+]
+`;
+
+exports[`get-images:param > when "photoBucket" env var is missing > resolves with a correct value 1`] = `"dummyErrorResponse"`;
+
+exports[`get-images:param > when "processImage" output length is bigger than lambda payload limit > calls "errorResponse" with correct args 1`] = `
+[
+  [
+    "5fe36afa17",
+  ],
+]
+`;
+
+exports[`get-images:param > when "processImage" output length is bigger than lambda payload limit > resolves with a correct value 1`] = `"dummyErrorResponse"`;
+
+exports[`get-images:param > when "quality" query string parameter is missing > calls "processImage" with correct args 1`] = `
+[
+  [
+    {
+      "height": 555,
+      "quality": undefined,
+      "stream": "dummyBody",
+      "width": 888,
+    },
+  ],
+]
+`;
+
+exports[`get-images:param > when "width" query string parameter is missing > calls "processImage" with correct args 1`] = `
+[
+  [
+    {
+      "height": 555,
+      "quality": 99,
+      "stream": "dummyBody",
+      "width": undefined,
+    },
+  ],
+]
+`;

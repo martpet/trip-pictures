@@ -1,0 +1,127 @@
+// Vitest Snapshot v1
+
+exports[`post-upload-urls > calls "createPhotoS3Key" with correct args 1`] = `
+[
+  [
+    {
+      "fingerprint": "dummyFingerprint2",
+      "userId": "dummySub",
+    },
+  ],
+]
+`;
+
+exports[`post-upload-urls > calls "createPresignedPost" with correct args 1`] = `
+[
+  [
+    DummyS3Client {},
+    {
+      "Bucket": "dummyPhotoBucket",
+      "Conditions": [
+        [
+          "content-length-range",
+          0,
+          15728640,
+        ],
+        {
+          "tagging": "<Tagging><TagSet><Tag><Key>isTableItemCreated</Key><Value>false</Value></Tag></TagSet></Tagging>",
+        },
+      ],
+      "Expires": 600,
+      "Fields": {
+        "tagging": "<Tagging><TagSet><Tag><Key>isTableItemCreated</Key><Value>false</Value></Tag></TagSet></Tagging>",
+        "x-amz-checksum-algorithm": "SHA256",
+        "x-amz-checksum-sha256": undefined,
+      },
+      "Key": "dummyPhotoS3Key",
+    },
+  ],
+]
+`;
+
+exports[`post-upload-urls > calls "ddbBatchGet" with correct args 1`] = `
+[
+  [
+    {
+      "pkValues": [
+        "dummyFingerprint1",
+        "dummyFingerprint2",
+      ],
+      "tableOptions": {
+        "partitionKey": {
+          "name": "fingerprint",
+          "type": "S",
+        },
+        "stream": "NEW_IMAGE",
+        "tableName": "TP-photos",
+      },
+    },
+  ],
+]
+`;
+
+exports[`post-upload-urls > calls "getIdTokenPayload" with correct args 1`] = `
+[
+  [
+    "dummyAuthorizationHeader",
+  ],
+]
+`;
+
+exports[`post-upload-urls > resolves with a correct value 1`] = `
+{
+  "existingFingerprintsInDb": [
+    "dummyFingerprint1",
+  ],
+  "presignedPosts": {
+    "dummyId2": "dummyPresignedPost",
+  },
+}
+`;
+
+exports[`post-upload-urls > when "authorization" header is missing > calls "errorResponse" with correct args 1`] = `
+[
+  [
+    "Vf5Ph6qN1S",
+  ],
+]
+`;
+
+exports[`post-upload-urls > when "authorization" header is missing > resolves with a correct value 1`] = `"dummyErrorResponse"`;
+
+exports[`post-upload-urls > when "event.body" is missing > calls "errorResponse" with correct args 1`] = `
+[
+  [
+    "G-luuHqI0s",
+    {
+      "statusCode": 400,
+    },
+  ],
+]
+`;
+
+exports[`post-upload-urls > when "event.body" is missing > resolves with a correct value 1`] = `"dummyErrorResponse"`;
+
+exports[`post-upload-urls > when "event.body" is not JSON > calls "errorResponse" with correct args 1`] = `
+[
+  [
+    "9210145fdf",
+    {
+      "error": [SyntaxError: Unexpected token o in JSON at position 1],
+      "statusCode": 400,
+    },
+  ],
+]
+`;
+
+exports[`post-upload-urls > when "event.body" is not JSON > resolves with a correct value 1`] = `"dummyErrorResponse"`;
+
+exports[`post-upload-urls > when "photoBucket" env var is missing > calls "errorResponse" with correct args 1`] = `
+[
+  [
+    "1rQkj3kpp4",
+  ],
+]
+`;
+
+exports[`post-upload-urls > when "photoBucket" env var is missing > resolves with a correct value 1`] = `"dummyErrorResponse"`;
