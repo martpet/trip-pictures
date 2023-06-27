@@ -59,4 +59,15 @@ describe('processImage', async () => {
     itCalls(sharp().blur, processImage, args);
     itCalls(sharp().toBuffer, processImage, args);
   });
+
+  describe('when meta height is larger than meta width', () => {
+    beforeEach(() => {
+      vi.mocked(sharp()).metadata.mockResolvedValueOnce({
+        width: 100,
+        height: 200,
+      } as sharp.Metadata);
+    });
+
+    itResolves(processImage, args);
+  });
 });

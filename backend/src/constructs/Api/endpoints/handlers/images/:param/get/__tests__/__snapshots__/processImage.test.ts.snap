@@ -138,8 +138,10 @@ exports[`processImage > when "width" prop is missing > calls "jpeg" with correct
 exports[`processImage > when "width" prop is missing > calls "resize" with correct args 1`] = `
 [
   [
-    1500,
+    1920,
     400,
   ],
 ]
 `;
+
+exports[`processImage > when meta height is larger than meta width > resolves with a correct value 1`] = `"dummyBufferToString"`;

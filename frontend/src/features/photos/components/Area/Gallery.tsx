@@ -14,8 +14,6 @@ import { galleryColsCountChanged, selectGalleryColsCount } from '~/features/phot
 
 import { GallerySizeSlider } from './GallerySlider';
 
-const IMG_WIDTH = 1800;
-
 interface GalleryProps {
   photos: Pick<Photo, 'fingerprint'>[];
 }
@@ -63,14 +61,12 @@ export function Gallery({ photos }: GalleryProps) {
             <a
               href={apiUrl('/images/:fingerprint', {
                 pathParams: { fingerprint },
-                searchParams: { width: String(IMG_WIDTH) },
               })}
               key={fingerprint}
               target="_blank"
               rel="noreferrer"
             >
               <UploadedImage
-                width={IMG_WIDTH}
                 key={fingerprint}
                 fingerprint={fingerprint}
                 colsCount={colsCount}
