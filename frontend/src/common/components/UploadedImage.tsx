@@ -57,7 +57,11 @@ export function UploadedImage({
       borderRadius={colsCount === 1 ? undefined : undefined}
       overflow="hidden"
       height="100%"
-      UNSAFE_style={{ aspectRatio: `${colsCount > 1 ? '1 / 1' : 'auto'}`, ...style }}
+      UNSAFE_style={{
+        aspectRatio: `${colsCount > 1 ? '1 / 1' : 'auto'}`,
+        minHeight: 28,
+        ...style,
+      }}
     >
       <Spinner
         isHidden={noLoader || !isLoaderVisible}
