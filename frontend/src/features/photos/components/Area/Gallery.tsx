@@ -14,7 +14,7 @@ import { galleryColsCountChanged, selectGalleryColsCount } from '~/features/phot
 
 import { GallerySizeSlider } from './GallerySlider';
 
-const IMG_WIDTH = 2000;
+const IMG_WIDTH = 1920;
 
 interface GalleryProps {
   photos: Pick<Photo, 'fingerprint'>[];
