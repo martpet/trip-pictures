@@ -56,6 +56,7 @@ export function UploadedImage({
       position="relative"
       borderRadius={colsCount === 1 ? undefined : undefined}
       overflow="hidden"
+      height="100%"
       UNSAFE_style={{ aspectRatio: `${colsCount > 1 ? '1 / 1' : 'auto'}`, ...style }}
     >
       <Spinner
@@ -73,6 +74,7 @@ export function UploadedImage({
         onLoad={handleLoad}
         onError={handleLoad}
         style={{
+          position: 'relative',
           display: 'block',
           gridColumn: '1',
           gridRow: '1',
