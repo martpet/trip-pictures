@@ -3,7 +3,7 @@ import { lazy, Suspense } from 'react';
 
 import { LoadingOverlay } from '~/common/components';
 
-const uploadDialogImport = import('./UploadDialog/UploadDialog');
+const uploadDialogImport = import('./UploadDialog');
 const UploadDialog = lazy(() => uploadDialogImport);
 
 export function UploadDialogLazy() {
