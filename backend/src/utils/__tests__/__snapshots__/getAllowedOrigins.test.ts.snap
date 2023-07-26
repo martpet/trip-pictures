@@ -1,0 +1,20 @@
+// Vitest Snapshot v1
+
+exports[`getAllowedOrigins > calls "getCdkEnv" with correct args 1`] = `
+[
+  [],
+]
+`;
+
+exports[`getAllowedOrigins > returns a correct value 1`] = `
+[
+  "https://trip.pictures",
+]
+`;
+
+exports[`getAllowedOrigins > when the environment is "personal > returns a correct value 1`] = `
+[
+  "https://johndoe.dev.trip.pictures",
+  "http://localhost:3000",
+]
+`;

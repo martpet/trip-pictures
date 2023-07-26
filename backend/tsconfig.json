@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "module": "CommonJS"
+  },
+  "extends": "../tsconfig.json",
+  "include": [
+    "src",
+    "vitest.config.ts",
+    ".eslintrc.cjs", "src/constructs/Api/utils/testHelpers", "../shared/types/EnvName.ts", "../shared/consts/rootStackOutputKeys.ts", "../shared/types/RootStackOutputs.ts", "../shared/utils/__mocks__/getCdkEnv.ts",
+  ],
+  "ts-node": {
+    "dotenv-flow-path": "../",
+    "require": [
+      "tsconfig-paths/register",
+      "dotenv-flow/config"
+    ],
+    "transpileOnly": true
+  }
+}

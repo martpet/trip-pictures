@@ -1,0 +1,15 @@
+// Vitest Snapshot v1
+
+exports[`deleteSession > resolves with a correct value 1`] = `"dummyRefreshToken"`;
+
+exports[`deleteSession > sends "DeleteCommand" from "DynamoDBDocumentClient" with correct args 1`] = `
+{
+  "Key": {
+    "id": "dummySessionId",
+  },
+  "ReturnValues": "ALL_OLD",
+  "TableName": "TP-sessions",
+}
+`;
+
+exports[`deleteSession > when "Attributes" prop is missing from "DeleteCommand" output > rejects with a correct value 1`] = `[Error: could not find session with id "dummySessionId"]`;

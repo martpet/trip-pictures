@@ -1,0 +1,24 @@
+// Vitest Snapshot v1
+
+exports[`get-points > calls "ddbScan" with correct args 1`] = `
+[
+  [
+    {
+      "attributes": [
+        "lon",
+        "lat",
+      ],
+      "tableOptions": {
+        "partitionKey": {
+          "name": "fingerprint",
+          "type": "S",
+        },
+        "stream": "NEW_IMAGE",
+        "tableName": "TP-photos",
+      },
+    },
+  ],
+]
+`;
+
+exports[`get-points > returns a correct value 1`] = `"dummyDdbScanResponse"`;

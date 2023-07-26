@@ -1,0 +1,147 @@
+// Vitest Snapshot v1
+
+exports[`processImage > calls "jpeg" with correct args 1`] = `
+[
+  [
+    {
+      "quality": 80,
+    },
+  ],
+]
+`;
+
+exports[`processImage > calls "resize" with correct args 1`] = `
+[
+  [
+    500,
+    400,
+  ],
+]
+`;
+
+exports[`processImage > calls "rotate" with correct args 1`] = `
+[
+  [],
+]
+`;
+
+exports[`processImage > calls "sharp" with correct args 1`] = `
+[
+  [
+    "dummyByteArray",
+  ],
+]
+`;
+
+exports[`processImage > calls "toBuffer" with correct args 1`] = `
+[
+  [],
+]
+`;
+
+exports[`processImage > calls "toString" with correct args 1`] = `
+[
+  [
+    "base64",
+  ],
+]
+`;
+
+exports[`processImage > resolves with a correct value 1`] = `"dummyBufferToString"`;
+
+exports[`processImage > sends "DetectModerationLabelsCommand" from "RekognitionClient" with correct args 1`] = `
+{
+  "Image": {
+    "Bytes": {
+      "toString": [MockFunction toString] {
+        "calls": [
+          [
+            "base64",
+          ],
+        ],
+        "results": [
+          {
+            "type": "return",
+            "value": "dummyBufferToString",
+          },
+        ],
+      },
+    },
+  },
+  "MinConfidence": 90,
+}
+`;
+
+exports[`processImage > when "DetectModerationLabelsCommand" returns "Explicit Nudity" > calls "blur" with correct args 1`] = `
+[
+  [
+    75,
+  ],
+]
+`;
+
+exports[`processImage > when "DetectModerationLabelsCommand" returns "Explicit Nudity" > calls "toBuffer" with correct args 1`] = `
+[
+  [],
+  [],
+]
+`;
+
+exports[`processImage > when "height" prop is missing > calls "jpeg" with correct args 1`] = `
+[
+  [
+    {
+      "quality": 80,
+    },
+  ],
+]
+`;
+
+exports[`processImage > when "height" prop is missing > calls "resize" with correct args 1`] = `
+[
+  [
+    500,
+    undefined,
+  ],
+]
+`;
+
+exports[`processImage > when "quality" prop is missing > calls "jpeg" with correct args 1`] = `
+[
+  [
+    {
+      "quality": 100,
+    },
+  ],
+]
+`;
+
+exports[`processImage > when "quality" prop is missing > calls "resize" with correct args 1`] = `
+[
+  [
+    500,
+    400,
+  ],
+]
+`;
+
+exports[`processImage > when "width" prop is missing > calls "jpeg" with correct args 1`] = `
+[
+  [
+    {
+      "quality": 80,
+    },
+  ],
+]
+`;
+
+exports[`processImage > when "width" prop is missing > calls "resize" with correct args 1`] = `
+[
+  [
+    1920,
+    400,
+  ],
+]
+`;
+
+exports[`processImage > when meta height is larger than meta width > resolves with a correct value 1`] = `"dummyBufferToString"`;

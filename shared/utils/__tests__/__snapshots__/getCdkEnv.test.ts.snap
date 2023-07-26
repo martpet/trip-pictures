@@ -1,0 +1,5 @@
+// Vitest Snapshot v1
+
+exports[`getCdkEnv > returns a correct value 1`] = `"production"`;
+
+exports[`getCdkEnv > when envName is invalid > throws an error 1`] = `"\\"process.env.ENV_NAME\\" is invalid"`;

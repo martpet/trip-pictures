@@ -1,0 +1,56 @@
+name: Deployment
+
+on:
+  workflow_call:
+    inputs:
+      AWS_ROLE_ARN:
+        required: true
+        type: string
+      ENV_NAME:
+        required: true
+        type: string
+      ENV_URL:
+        required: true
+        type: string
+
+jobs:
+  cdk-deploy:
+    name: "CDK deploy"
+    runs-on: ubuntu-20.04
+    environment: 
+      name: ${{ inputs.ENV_NAME }}
+      url: ${{ inputs.ENV_URL }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Pull
+        if: ${{ inputs.ENV_NAME == 'staging' }}
+        run: git pull origin
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          role-to-assume: ${{ inputs.AWS_ROLE_ARN }}
+          aws-region: eu-central-1
+          role-skip-session-tagging: true
+          role-duration-seconds: 3600
+      
+      - name: Setup AWS CLI
+        uses: unfor19/install-aws-cli-action@v1
+        with:
+          version: 2 
+
+      - name: Deploy stack
+        run: ENV_NAME=${{ inputs.ENV_NAME }} npm run deploy

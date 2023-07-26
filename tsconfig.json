@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "ESNext"
+    ],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "paths": {
+      "lambda-layer": [
+        "./constructs/utils/lambdaLayers/mainLayer/code/main-layer"
+      ],
+      "constructs": [
+        "../../node_modules/constructs"
+      ],
+      "~/*": [
+        "./*"
+      ]
+    },
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ESNext",
+    "types": [
+      "vitest/globals"
+    ]
+  },
+  "include": [
+    "scripts/deploy.ts",
+    "scripts/startDevServer.ts",
+    "scripts/getRootStackOutputs.ts",
+    "scripts/getIdentityPoolId.ts",
+    ".eslintrc.cjs",
+    ".prettierrc.cjs",
+    "vitest.config.ts",
+    "setupTests.ts",
+    "__mocks__/"
+  ]
+}

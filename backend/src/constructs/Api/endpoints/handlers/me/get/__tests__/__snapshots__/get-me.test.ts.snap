@@ -1,0 +1,49 @@
+// Vitest Snapshot v1
+
+exports[`get-me > calls "getIdTokenPayload" with correct args 1`] = `
+[
+  [
+    "dummyAuthorizationHeader",
+  ],
+]
+`;
+
+exports[`get-me > resolves with a correct value 1`] = `
+{
+  "email": "dummyEmail",
+  "familyName": "dummyFamilyName",
+  "givenName": "dummyGivenName",
+  "picture": "dummyPicture",
+  "providerName": "dummyProviderName",
+  "settings": "dummySettings",
+}
+`;
+
+exports[`get-me > sends "GetCommand" from "DynamoDBDocumentClient" with correct args 1`] = `
+{
+  "Key": {
+    "id": "dummySub",
+  },
+  "TableName": "TP-users",
+}
+`;
+
+exports[`get-me > when "Item" is missing from "GetCommand" output > calls "errorResponse" with correct args 1`] = `
+[
+  [
+    "Satqo0r-AS",
+  ],
+]
+`;
+
+exports[`get-me > when "Item" is missing from "GetCommand" output > resolves with a correct value 1`] = `"dummyErrorResponse"`;
+
+exports[`get-me > when "authorization" header is missing > calls "errorResponse" with correct args 1`] = `
+[
+  [
+    "RyFuj-_6Qo",
+  ],
+]
+`;
+
+exports[`get-me > when "authorization" header is missing > resolves with a correct value 1`] = `"dummyErrorResponse"`;

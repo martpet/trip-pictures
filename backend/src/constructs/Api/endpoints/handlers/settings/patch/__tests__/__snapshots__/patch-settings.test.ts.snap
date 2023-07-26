@@ -1,0 +1,82 @@
+// Vitest Snapshot v1
+
+exports[`patch-settings > calls "getIdTokenPayload" with correct args 1`] = `
+[
+  [
+    "dummyAuthorizationHeader",
+  ],
+]
+`;
+
+exports[`patch-settings > resolves with a correct value 1`] = `
+{
+  "statusCode": 204,
+}
+`;
+
+exports[`patch-settings > sends "UpdateCommand" from "DynamoDBDocumentClient" with correct args 1`] = `
+{
+  "ExpressionAttributeNames": {
+    "#language": "language",
+    "#settings": "settings",
+  },
+  "ExpressionAttributeValues": {
+    ":language": "dummyLanguage",
+  },
+  "Key": {
+    "id": "dummySub",
+  },
+  "TableName": "TP-users",
+  "UpdateExpression": "set #settings.#language = :language",
+}
+`;
+
+exports[`patch-settings > when "authorization" header is missing > calls "errorResponse" with correct args 1`] = `
+[
+  [
+    "UMxOJy1cpJ",
+  ],
+]
+`;
+
+exports[`patch-settings > when "authorization" header is missing > resolves with a correct value 1`] = `"dummyErrorResponse"`;
+
+exports[`patch-settings > when "event.body" has unknown keys > calls "errorResponse" with correct args 1`] = `
+[
+  [
+    "IUKROTi0UF",
+    {
+      "statusCode": 400,
+    },
+  ],
+]
+`;
+
+exports[`patch-settings > when "event.body" has unknown keys > resolves with a correct value 1`] = `"dummyErrorResponse"`;
+
+exports[`patch-settings > when "event.body" is missing > calls "errorResponse" with correct args 1`] = `
+[
+  [
+    "x1IsNHbqd3",
+    {
+      "statusCode": 400,
+    },
+  ],
+]
+`;
+
+exports[`patch-settings > when "event.body" is missing > resolves with a correct value 1`] = `"dummyErrorResponse"`;
+
+exports[`patch-settings > when "event.body" is not JSON > calls "errorResponse" with correct args 1`] = `
+[
+  [
+    "d6QTt6tKWK",
+    {
+      "error": [SyntaxError: Unexpected token o in JSON at position 1],
+      "statusCode": 400,
+    },
+  ],
+]
+`;
+
+exports[`patch-settings > when "event.body" is not JSON > resolves with a correct value 1`] = `"dummyErrorResponse"`;

@@ -1,0 +1,11 @@
+// Vitest Snapshot v1
+
+exports[`createPhotoFingerprint > returns a correct value 1`] = `"dummyDate_1.23_3.45"`;
+
+exports[`parsePhotoFingerprint > returns a correct value 1`] = `
+{
+  "date": "2022-08-13T09:52:30",
+  "lat": 39.505653,
+  "lon": 20.176583,
+}
+`;

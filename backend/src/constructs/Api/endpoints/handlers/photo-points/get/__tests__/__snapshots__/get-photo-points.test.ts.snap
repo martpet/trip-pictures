@@ -1,0 +1,35 @@
+// Vitest Snapshot v1
+
+exports[`get-photo-points > calls "ddbScan" with correct args 1`] = `
+[
+  [
+    {
+      "attributes": [
+        "fingerprint",
+      ],
+      "tableOptions": {
+        "partitionKey": {
+          "name": "fingerprint",
+          "type": "S",
+        },
+        "stream": "NEW_IMAGE",
+        "tableName": "TP-photos",
+      },
+    },
+  ],
+]
+`;
+
+exports[`get-photo-points > resolves with a correct value 1`] = `
+[
+  {
+    "fingerprint": "c",
+  },
+  {
+    "fingerprint": "b",
+  },
+  {
+    "fingerprint": "a",
+  },
+]
+`;
