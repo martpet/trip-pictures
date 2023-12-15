@@ -42,17 +42,15 @@ export function Gallery({ photos }: GalleryProps) {
     <>
       {!isMobile && (
         <ContentFor slot={SLOTS.toolbar} order={-1}>
-          <BackButton path="/" />
-          {SHOW_BACK_BUTTON && (
-            <GallerySizeSlider
-              colsCount={colsCount}
-              setColsCount={setColsCount}
-              appliedColWidth={appliedColWidth}
-              setAppliedColWidth={setAppliedColWidth}
-              gridGap={gridGap}
-              containerDOMRef={containerDOMRef}
-            />
-          )}
+          {SHOW_BACK_BUTTON && <BackButton path="/" />}
+          <GallerySizeSlider
+            colsCount={colsCount}
+            setColsCount={setColsCount}
+            appliedColWidth={appliedColWidth}
+            setAppliedColWidth={setAppliedColWidth}
+            gridGap={gridGap}
+            containerDOMRef={containerDOMRef}
+          />
         </ContentFor>
       )}
 
