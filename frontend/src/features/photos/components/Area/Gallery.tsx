@@ -40,17 +40,19 @@ export function Gallery({ photos }: GalleryProps) {
 
   return (
     <>
-      {SHOW_BACK_BUTTON && !isMobile && (
+      {!isMobile && (
         <ContentFor slot={SLOTS.toolbar} order={-1}>
           <BackButton path="/" />
-          <GallerySizeSlider
-            colsCount={colsCount}
-            setColsCount={setColsCount}
-            appliedColWidth={appliedColWidth}
-            setAppliedColWidth={setAppliedColWidth}
-            gridGap={gridGap}
-            containerDOMRef={containerDOMRef}
-          />
+          {SHOW_BACK_BUTTON && (
+            <GallerySizeSlider
+              colsCount={colsCount}
+              setColsCount={setColsCount}
+              appliedColWidth={appliedColWidth}
+              setAppliedColWidth={setAppliedColWidth}
+              gridGap={gridGap}
+              containerDOMRef={containerDOMRef}
+            />
+          )}
         </ContentFor>
       )}
 
