@@ -1,9 +1,11 @@
 import { ActionButton, Text } from '@adobe/react-spectrum';
 import { useIsMobileDevice } from '@react-spectrum/utils';
-import UploadIcon from '@spectrum-icons/workflow/ImageAdd';
+import UploadIcon from '@spectrum-icons/workflow/AddCircle';
 import { FormattedMessage, useIntl } from 'react-intl';
 
 import { UploadDialogLazy, UploadDialogTrigger } from '~/features/upload';
+
+const SHOW_TEXT = false;
 
 export function UploadButton() {
   const { formatMessage } = useIntl();
@@ -19,7 +21,7 @@ export function UploadButton() {
         })}
       >
         <UploadIcon />
-        {!isMobile && (
+        {SHOW_TEXT && !isMobile && (
           <Text>
             <FormattedMessage defaultMessage="Add photos" description="uplaod button" />
           </Text>

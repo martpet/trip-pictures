@@ -30,6 +30,8 @@ export function Gallery({ photos }: GalleryProps) {
   const dispatch = useAppDispatch();
   const gridGap = colsCount === 1 ? 10 : 2;
 
+  const SHOW_BACK_BUTTON = false;
+
   useEffect(() => {
     if (debouncedColsCount !== storedColsCount) {
       dispatch(galleryColsCountChanged(debouncedColsCount));
@@ -38,7 +40,7 @@ export function Gallery({ photos }: GalleryProps) {
 
   return (
     <>
-      {!isMobile && (
+      {SHOW_BACK_BUTTON && !isMobile && (
         <ContentFor slot={SLOTS.toolbar} order={-1}>
           <BackButton path="/" />
           <GallerySizeSlider
