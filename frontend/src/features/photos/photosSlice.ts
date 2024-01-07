@@ -7,7 +7,7 @@ export type PhotosState = {
 };
 
 const initialState: PhotosState = {
-  galleryColsCount: 10,
+  galleryColsCount: 5,
 };
 
 export const photosSlice = createSlice({
