@@ -1,6 +1,5 @@
 import {
   APIGatewayProxyHandlerV2,
-  apiOptions,
   ApiQueryStrings,
   DynamoDBClient,
   DynamoDBDocumentClient,
@@ -67,7 +66,7 @@ export const handler: APIGatewayProxyHandlerV2<GetImagesResponse> = async (event
     body: base64Image,
     headers: {
       'Content-Type': 'image/jpeg',
-      'Cache-Control': `max-age=${apiOptions['/images/:fingerprint'].cacheProps.maxTtl}`,
+      'Cache-Control': 'public, max-age=31536000',
     },
   };
 };

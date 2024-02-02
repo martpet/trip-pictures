@@ -44,9 +44,9 @@ export const createDistroBehaviors = ({ scope, auth, origin, distribution }: Pro
 
   const defaultCachePolicyProps: CachePolicyProps = {
     cachePolicyName: `${appName}-Api-Default-Policy`,
-    defaultTtl: Duration.seconds(0),
+    defaultTtl: Duration.seconds(1),
     minTtl: Duration.seconds(0),
-    maxTtl: Duration.seconds(1),
+    maxTtl: Duration.days(365),
     cookieBehavior: CacheCookieBehavior.none(),
     queryStringBehavior: CacheQueryStringBehavior.none(),
     enableAcceptEncodingBrotli: true,

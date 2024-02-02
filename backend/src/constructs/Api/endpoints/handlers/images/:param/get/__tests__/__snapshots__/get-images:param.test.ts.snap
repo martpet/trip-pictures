@@ -17,7 +17,7 @@ exports[`get-images:param > resolves with a correct value 1`] = `
 {
   "body": "dummyBase64EncodedImage",
   "headers": {
-    "Cache-Control": "max-age=3153600000",
+    "Cache-Control": "public, max-age=31536000",
     "Content-Type": "image/jpeg",
   },
   "isBase64Encoded": true,

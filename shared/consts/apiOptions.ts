@@ -85,9 +85,6 @@ export const apiOptions = {
   },
   '/images/:fingerprint': {
     queryStrings: ['quality', 'width', 'height'],
-    cacheProps: {
-      maxTtl: 100 * 365 * 24 * 60 * 60,
-    },
     methods: {
       GET: {
         isPublic: true,
